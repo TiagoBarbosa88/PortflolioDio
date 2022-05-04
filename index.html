@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b6cffeae5.js" crossorigin="anonymous"></script>
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <!---- Cabeçalho ------>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a target="blank" href="https://github.com/TiagoBarbosa88">Github</a>
+                </li>
+                <li>
+                    <a target="blank" href="mailto:sombr43@gmai.com">Email</a>
+                </li>
+                <li>
+                    <a target="blank" href="https://wa.me/11980384946">Me liga</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!---- Sessão ------>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Tiago Barbosa</h1>
+                <h5>Front-End Developer</h5>
+
+            </div>
+            <div onclick="displayAbout()" class="arrow">
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+
+            <div style="display:none;" id="about">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iste suscipit natus blanditiis
+                    voluptatem voluptatum mollitia nulla libero sequi dolores, placeat numquam reprehenderit dolore
+                    molestiae delectus. Dolorum eius tenetur accusamus!</p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>
+                        Deixe seu contato !
+                    </p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail :)">
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+
+        }
+    </script>
+
+
+</body>
+
+
+</html>
